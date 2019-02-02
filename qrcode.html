@@ -1,16 +1,30 @@
 <html>
 
 <head>
-<script type="text/javascript" src="https://joytou.net/assets/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/jeromeetienne/jquery-qrcode/master/jquery.qrcode.min.js"></script>
 
 </head>
 
 <body>
 
-<div id="qrcode"></div>
-<script type="text/javascript">
-  jquery('#qrcode').qrcode("this plugin is great");
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="https://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+<p>使用 table 渲染</p>
+
+<div id="qrcodeTable"></div>
+
+<p>使用 canvas 渲染 canvas</p>
+
+<div id="qrcodeCanvas"></div>
+<script>
+jQuery('#qrcodeTable').qrcode({
+  render	: "table",
+  text	: "http://www.runoob.com"
+});	
+jQuery('#qrcodeCanvas').qrcode({
+  text	: "http://www.runoob.com"
+});
 </script>
 </body>
 
