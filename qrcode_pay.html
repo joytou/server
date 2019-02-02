@@ -2,24 +2,16 @@
 
 <head>
 
-<script>
-
-function newDoc()
-
-  {
-
-  window.location.assign("https://u.wechat.com/MFCPAsatoSzDKFIXMit7JOM")
-
-  }
-
-</script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/jeromeetienne/jquery-qrcode/master/jquery.qrcode.min.js"></script>
 
 </head>
 
 <body>
 
-<input type="button" value="Load new document" onclick="newDoc()">
-
+<div id="qrcode"></div>
+<script type="text/javascript">
+  jquery('#qrcode').qrcode("this plugin is great");
+</script>
 </body>
 
 </html>
