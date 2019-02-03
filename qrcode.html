@@ -27,7 +27,13 @@ jQuery('#qrcodeTable').qrcode({
   text	: "http://www.runoob.com"
 });	
 jQuery('#qrcodeCanvas').qrcode({
-  text	: "http://www.runoob.com"
+  width:200,
+  height:200,
+  text	: "http://www.runoob.com",
+  mode:4,
+  mSize:11*0.01,
+  mPosX:50*0.01,
+  mPosY:50*0.01
 });
   jQuery('#qrcodeImage').qrcode({
     render : "image",
