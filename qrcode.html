@@ -17,6 +17,10 @@
 <p>使用 canvas 渲染 canvas</p>
 
 <div id="qrcodeCanvas"></div>
+
+<p>使用 image 渲染</p>
+  
+<div id="qrcodeImage"></div>
 <script>
 jQuery('#qrcodeTable').qrcode({
   render	: "table",
@@ -25,6 +29,10 @@ jQuery('#qrcodeTable').qrcode({
 jQuery('#qrcodeCanvas').qrcode({
   text	: "http://www.runoob.com"
 });
+  jQuery('#qrcodeImage').qrcode({
+    render : "image",
+    text : "http://www.runoob.com"
+  });
 </script>
 </body>
 
